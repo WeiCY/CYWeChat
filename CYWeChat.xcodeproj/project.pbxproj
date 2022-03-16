@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5EEB67827E1CEEA005FDD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */; };
+		F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */; };
+		F5EEB68127E1CEEB005FDD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EEB68027E1CEEB005FDD8D /* Assets.xcassets */; };
+		F5EEB68427E1CEEB005FDD8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EEB68227E1CEEB005FDD8D /* LaunchScreen.storyboard */; };
+		F5EEB68F27E1CEEC005FDD8D /* CYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB68E27E1CEEC005FDD8D /* CYWeChatTests.swift */; };
+		F5EEB69927E1CEEC005FDD8D /* CYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB69827E1CEEC005FDD8D /* CYWeChatUITests.swift */; };
+		F5EEB69B27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB69A27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift */; };
+		F5EEB6A927E1CFB7005FDD8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6A827E1CFB7005FDD8D /* Kingfisher */; };
+		F5EEB6AC27E1CFD5005FDD8D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6AB27E1CFD5005FDD8D /* SnapKit */; };
+		F5EEB6AF27E1D033005FDD8D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6AE27E1D033005FDD8D /* SwiftyJSON */; };
+		F5EEB6B227E1D053005FDD8D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6B127E1D053005FDD8D /* Toast */; };
+		F5EEB6B927E1D2E9005FDD8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */; };
+		F5EEB6BA27E1D2E9005FDD8D /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */; };
+		F5EEB6BB27E1D2E9005FDD8D /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */; };
+		F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */; };
+		F5EEB6C227E1D79D005FDD8D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */; };
+		F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */; };
+		F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */; };
+		F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */; };
+		F5EEB6CA27E1D868005FDD8D /* CommonMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C927E1D868005FDD8D /* CommonMacros.swift */; };
+		F5EEB6CF27E1D885005FDD8D /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6CD27E1D885005FDD8D /* UIColorExtension.swift */; };
+		F5EEB6D027E1D885005FDD8D /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6CE27E1D885005FDD8D /* UIViewExtension.swift */; };
+		F5EEB6D227E1D8E5005FDD8D /* LeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6D127E1D8E5005FDD8D /* LeadingViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5EEB68B27E1CEEC005FDD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EEB66C27E1CEEA005FDD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EEB67327E1CEEA005FDD8D;
+			remoteInfo = CYWeChat;
+		};
+		F5EEB69527E1CEEC005FDD8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5EEB66C27E1CEEA005FDD8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5EEB67327E1CEEA005FDD8D;
+			remoteInfo = CYWeChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5EEB67427E1CEEA005FDD8D /* CYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F5EEB68027E1CEEB005FDD8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5EEB68327E1CEEB005FDD8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5EEB68527E1CEEB005FDD8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5EEB68A27E1CEEC005FDD8D /* CYWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EEB68E27E1CEEC005FDD8D /* CYWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYWeChatTests.swift; sourceTree = "<group>"; };
+		F5EEB69427E1CEEC005FDD8D /* CYWeChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CYWeChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5EEB69827E1CEEC005FDD8D /* CYWeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYWeChatUITests.swift; sourceTree = "<group>"; };
+		F5EEB69A27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYWeChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
+		F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatViewController.swift; sourceTree = "<group>"; };
+		F5EEB6C927E1D868005FDD8D /* CommonMacros.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMacros.swift; sourceTree = "<group>"; };
+		F5EEB6CD27E1D885005FDD8D /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F5EEB6CE27E1D885005FDD8D /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		F5EEB6D127E1D8E5005FDD8D /* LeadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeadingViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5EEB67127E1CEEA005FDD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EEB6B227E1D053005FDD8D /* Toast in Frameworks */,
+				F5EEB6AF27E1D033005FDD8D /* SwiftyJSON in Frameworks */,
+				F5EEB6A927E1CFB7005FDD8D /* Kingfisher in Frameworks */,
+				F5EEB6AC27E1CFD5005FDD8D /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB68727E1CEEC005FDD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB69127E1CEEC005FDD8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5EEB66B27E1CEEA005FDD8D = {
+			isa = PBXGroup;
+			children = (
+				F5EEB67627E1CEEA005FDD8D /* CYWeChat */,
+				F5EEB68D27E1CEEC005FDD8D /* CYWeChatTests */,
+				F5EEB69727E1CEEC005FDD8D /* CYWeChatUITests */,
+				F5EEB67527E1CEEA005FDD8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5EEB67527E1CEEA005FDD8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB67427E1CEEA005FDD8D /* CYWeChat.app */,
+				F5EEB68A27E1CEEC005FDD8D /* CYWeChatTests.xctest */,
+				F5EEB69427E1CEEC005FDD8D /* CYWeChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5EEB67627E1CEEA005FDD8D /* CYWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */,
+				F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */,
+				F5EEB6CC27E1D885005FDD8D /* Extensions */,
+				F5EEB6CB27E1D86F005FDD8D /* Common */,
+				F5EEB6B327E1D2D1005FDD8D /* Class */,
+				F5EEB68027E1CEEB005FDD8D /* Assets.xcassets */,
+				F5EEB68227E1CEEB005FDD8D /* LaunchScreen.storyboard */,
+				F5EEB68527E1CEEB005FDD8D /* Info.plist */,
+			);
+			path = CYWeChat;
+			sourceTree = "<group>";
+		};
+		F5EEB68D27E1CEEC005FDD8D /* CYWeChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB68E27E1CEEC005FDD8D /* CYWeChatTests.swift */,
+			);
+			path = CYWeChatTests;
+			sourceTree = "<group>";
+		};
+		F5EEB69727E1CEEC005FDD8D /* CYWeChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB69827E1CEEC005FDD8D /* CYWeChatUITests.swift */,
+				F5EEB69A27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift */,
+			);
+			path = CYWeChatUITests;
+			sourceTree = "<group>";
+		};
+		F5EEB6B327E1D2D1005FDD8D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6D327E1D8EB005FDD8D /* Leading */,
+				F5EEB6C027E1D756005FDD8D /* Mine */,
+				F5EEB6BF27E1D750005FDD8D /* Discover */,
+				F5EEB6BE27E1D458005FDD8D /* Contacts */,
+				F5EEB6BD27E1D2FB005FDD8D /* Wechat */,
+				F5EEB6B427E1D2E9005FDD8D /* Base */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F5EEB6B427E1D2E9005FDD8D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */,
+				F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */,
+				F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */,
+				F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		F5EEB6BD27E1D2FB005FDD8D /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		F5EEB6BE27E1D458005FDD8D /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		F5EEB6BF27E1D750005FDD8D /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F5EEB6C027E1D756005FDD8D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		F5EEB6CB27E1D86F005FDD8D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6C927E1D868005FDD8D /* CommonMacros.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F5EEB6CC27E1D885005FDD8D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6CD27E1D885005FDD8D /* UIColorExtension.swift */,
+				F5EEB6CE27E1D885005FDD8D /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F5EEB6D327E1D8EB005FDD8D /* Leading */ = {
+			isa = PBXGroup;
+			children = (
+				F5EEB6D127E1D8E5005FDD8D /* LeadingViewController.swift */,
+			);
+			path = Leading;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5EEB67327E1CEEA005FDD8D /* CYWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EEB69E27E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChat" */;
+			buildPhases = (
+				F5EEB67027E1CEEA005FDD8D /* Sources */,
+				F5EEB67127E1CEEA005FDD8D /* Frameworks */,
+				F5EEB67227E1CEEA005FDD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CYWeChat;
+			packageProductDependencies = (
+				F5EEB6A827E1CFB7005FDD8D /* Kingfisher */,
+				F5EEB6AB27E1CFD5005FDD8D /* SnapKit */,
+				F5EEB6AE27E1D033005FDD8D /* SwiftyJSON */,
+				F5EEB6B127E1D053005FDD8D /* Toast */,
+			);
+			productName = CYWeChat;
+			productReference = F5EEB67427E1CEEA005FDD8D /* CYWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5EEB68927E1CEEC005FDD8D /* CYWeChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EEB6A127E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChatTests" */;
+			buildPhases = (
+				F5EEB68627E1CEEC005FDD8D /* Sources */,
+				F5EEB68727E1CEEC005FDD8D /* Frameworks */,
+				F5EEB68827E1CEEC005FDD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EEB68C27E1CEEC005FDD8D /* PBXTargetDependency */,
+			);
+			name = CYWeChatTests;
+			productName = CYWeChatTests;
+			productReference = F5EEB68A27E1CEEC005FDD8D /* CYWeChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5EEB69327E1CEEC005FDD8D /* CYWeChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5EEB6A427E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChatUITests" */;
+			buildPhases = (
+				F5EEB69027E1CEEC005FDD8D /* Sources */,
+				F5EEB69127E1CEEC005FDD8D /* Frameworks */,
+				F5EEB69227E1CEEC005FDD8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5EEB69627E1CEEC005FDD8D /* PBXTargetDependency */,
+			);
+			name = CYWeChatUITests;
+			productName = CYWeChatUITests;
+			productReference = F5EEB69427E1CEEC005FDD8D /* CYWeChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5EEB66C27E1CEEA005FDD8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F5EEB67327E1CEEA005FDD8D = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					F5EEB68927E1CEEC005FDD8D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = F5EEB67327E1CEEA005FDD8D;
+					};
+					F5EEB69327E1CEEC005FDD8D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = F5EEB67327E1CEEA005FDD8D;
+					};
+				};
+			};
+			buildConfigurationList = F5EEB66F27E1CEEA005FDD8D /* Build configuration list for PBXProject "CYWeChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5EEB66B27E1CEEA005FDD8D;
+			packageReferences = (
+				F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F5EEB6AD27E1D033005FDD8D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				F5EEB6B027E1D053005FDD8D /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
+			productRefGroup = F5EEB67527E1CEEA005FDD8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5EEB67327E1CEEA005FDD8D /* CYWeChat */,
+				F5EEB68927E1CEEC005FDD8D /* CYWeChatTests */,
+				F5EEB69327E1CEEC005FDD8D /* CYWeChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5EEB67227E1CEEA005FDD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EEB68427E1CEEB005FDD8D /* LaunchScreen.storyboard in Resources */,
+				F5EEB68127E1CEEB005FDD8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB68827E1CEEC005FDD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB69227E1CEEC005FDD8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5EEB67027E1CEEA005FDD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EEB6BB27E1D2E9005FDD8D /* BaseWebViewController.swift in Sources */,
+				F5EEB67827E1CEEA005FDD8D /* AppDelegate.swift in Sources */,
+				F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */,
+				F5EEB6CA27E1D868005FDD8D /* CommonMacros.swift in Sources */,
+				F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */,
+				F5EEB6C227E1D79D005FDD8D /* MineViewController.swift in Sources */,
+				F5EEB6B927E1D2E9005FDD8D /* BaseViewController.swift in Sources */,
+				F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */,
+				F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */,
+				F5EEB6D027E1D885005FDD8D /* UIViewExtension.swift in Sources */,
+				F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */,
+				F5EEB6D227E1D8E5005FDD8D /* LeadingViewController.swift in Sources */,
+				F5EEB6BA27E1D2E9005FDD8D /* BaseNavigationViewController.swift in Sources */,
+				F5EEB6CF27E1D885005FDD8D /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB68627E1CEEC005FDD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EEB68F27E1CEEC005FDD8D /* CYWeChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5EEB69027E1CEEC005FDD8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5EEB69B27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift in Sources */,
+				F5EEB69927E1CEEC005FDD8D /* CYWeChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5EEB68C27E1CEEC005FDD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EEB67327E1CEEA005FDD8D /* CYWeChat */;
+			targetProxy = F5EEB68B27E1CEEC005FDD8D /* PBXContainerItemProxy */;
+		};
+		F5EEB69627E1CEEC005FDD8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5EEB67327E1CEEA005FDD8D /* CYWeChat */;
+			targetProxy = F5EEB69527E1CEEC005FDD8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5EEB68227E1CEEB005FDD8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5EEB68327E1CEEB005FDD8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5EEB69C27E1CEEC005FDD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5EEB69D27E1CEEC005FDD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5EEB69F27E1CEEC005FDD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CYWeChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5EEB6A027E1CEEC005FDD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CYWeChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F5EEB6A227E1CEEC005FDD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYWeChat.app/CYWeChat";
+			};
+			name = Debug;
+		};
+		F5EEB6A327E1CEEC005FDD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CYWeChat.app/CYWeChat";
+			};
+			name = Release;
+		};
+		F5EEB6A527E1CEEC005FDD8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYWeChat;
+			};
+			name = Debug;
+		};
+		F5EEB6A627E1CEEC005FDD8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hz.CYWeChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CYWeChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5EEB66F27E1CEEA005FDD8D /* Build configuration list for PBXProject "CYWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EEB69C27E1CEEC005FDD8D /* Debug */,
+				F5EEB69D27E1CEEC005FDD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EEB69E27E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EEB69F27E1CEEC005FDD8D /* Debug */,
+				F5EEB6A027E1CEEC005FDD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EEB6A127E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EEB6A227E1CEEC005FDD8D /* Debug */,
+				F5EEB6A327E1CEEC005FDD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5EEB6A427E1CEEC005FDD8D /* Build configuration list for PBXNativeTarget "CYWeChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5EEB6A527E1CEEC005FDD8D /* Debug */,
+				F5EEB6A627E1CEEC005FDD8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F5EEB6AD27E1D033005FDD8D /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		F5EEB6B027E1D053005FDD8D /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5EEB6A827E1CFB7005FDD8D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		F5EEB6AB27E1CFD5005FDD8D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F5EEB6AE27E1D033005FDD8D /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5EEB6AD27E1D033005FDD8D /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		F5EEB6B127E1D053005FDD8D /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5EEB6B027E1D053005FDD8D /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F5EEB66C27E1CEEA005FDD8D /* Project object */;
+}
