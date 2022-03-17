@@ -23,6 +23,11 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        view.endEditing(true)
+    }
+    
     // MARK: 基础代码 可被子类重写
     func initUI() {
         
@@ -46,4 +51,18 @@ class BaseViewController: UIViewController {
         print("控制器被释放了")
     }
 
+}
+
+extension BaseViewController {
+    func popLastVC() {
+        if ((self.navigationController?.viewControllers) != nil) {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
+    
+    func popToRootVC() {
+        if ((self.navigationController?.viewControllers) != nil) {
+            self.navigationController?.popToRootViewController(animated: true)
+        }
+    }
 }

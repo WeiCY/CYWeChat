@@ -10,6 +10,8 @@ import UIKit
 /// TabBar控制器
 class TabBarViewController: UITabBarController {
 
+    private var indexFlag: Int = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,10 +32,11 @@ class TabBarViewController: UITabBarController {
     */
     
     func customTabBar() {
-        UITabBar.appearance().isTranslucent = false
-        self.tabBar.shadowImage = UIImage()
-        self.tabBar.backgroundImage = UIImage()
-        UITabBar.appearance().backgroundColor = UIColor.white
+        let tabBar = UITabBar.appearance()
+        tabBar.isTranslucent = false
+        tabBar.shadowImage = UIImage()
+        tabBar.backgroundImage = UIImage()
+        tabBar.backgroundColor = UIColor.systemGray6
 
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: TABBAR_NORMAL_COLOR,
                                                           NSAttributedString.Key.font: TABBAR_NORMAL_FONT], for: .normal)
@@ -55,4 +58,36 @@ class TabBarViewController: UITabBarController {
         self.addChild(naviVC)
     }
 
+}
+
+extension TabBarViewController {
+    // MARK: 动画
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if let index = tabBar.items?.firstIndex(of: item) {
+            if indexFlag != index {
+                animateWithIndex(index: index)
+            }
+        }
+    }
+    
+    private func animateWithIndex(index: Int) {
+        var buttons = [UIView]()
+        for view in tabBar.subviews {
+            if view.isKind(of: NSClassFromString("UITabBarButton")!) {
+                buttons.append(view)
+            }
+        }
+        
+        // 缩放
+        let pulse = CABasicAnimation(keyPath: "transform.scale")
+        pulse.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        pulse.duration = 0.15
+        pulse.repeatCount = 1
+        pulse.autoreverses = true
+        pulse.fromValue = NSNumber(value: 0.8)
+        pulse.toValue = NSNumber(value: 1.1)
+        buttons[index].layer.add(pulse, forKey: nil)
+        
+        indexFlag = index
+    }
 }

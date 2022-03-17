@@ -107,8 +107,7 @@ extension UIView {
         guard let size = size else {
             return
         }
-        
-        let bezierPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: type, cornerRadii: size)
+        let bezierPath = UIBezierPath.init(roundedRect: self.bounds, byRoundingCorners: cornerType, cornerRadii: size)
         let maskLayer = CAShapeLayer()
         maskLayer.frame = self.bounds
         maskLayer.path = bezierPath.cgPath
