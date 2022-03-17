@@ -9,6 +9,10 @@ import Foundation
 import UIKit
 
 extension UIColor {
+    
+    /// 16进制转化Color
+    /// - Parameter hexValue: 16进制颜色
+    /// - Returns: color
     func hexColor(_ hexValue: Int) -> UIColor {
         return hexColor(hexValue, alphaValue: 1)
     }

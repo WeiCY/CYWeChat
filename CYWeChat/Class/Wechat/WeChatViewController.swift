@@ -26,5 +26,14 @@ class WeChatViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func initUI() {
+        let button = UIButton.init(type: .custom)
+        button.frame = CGRect.init(x: 100, y: 100, width: 100, height: 100)
+        button.backgroundColor = UIColor.red
+        view.addSubview(button)
+        button.cy_cornerRadius = 10
+        button.cy_borderWidth = 2
+    }
 
 }

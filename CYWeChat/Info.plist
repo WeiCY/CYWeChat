@@ -19,5 +19,15 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>需要扫描二维码或拍照,是否允许打开相机?</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>App需要您的同意,才能使用Face ID</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App需要您的同意,才能访问麦克风</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App需要您的同意,才能访问相册保存图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要您的同意,才能访问相册保存图片</string>
 </dict>
 </plist>
