@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F516339C27E998DD00F58B24 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516339B27E998DD00F58B24 /* BaseTableViewController.swift */; };
+		F516339E27E998FB00F58B24 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516339D27E998FB00F58B24 /* MineViewController.swift */; };
 		F5EEB67827E1CEEA005FDD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */; };
 		F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */; };
 		F5EEB68127E1CEEB005FDD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EEB68027E1CEEB005FDD8D /* Assets.xcassets */; };
@@ -14,7 +16,6 @@
 		F5EEB68F27E1CEEC005FDD8D /* CYWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB68E27E1CEEC005FDD8D /* CYWeChatTests.swift */; };
 		F5EEB69927E1CEEC005FDD8D /* CYWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB69827E1CEEC005FDD8D /* CYWeChatUITests.swift */; };
 		F5EEB69B27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB69A27E1CEEC005FDD8D /* CYWeChatUITestsLaunchTests.swift */; };
-		F5EEB6A927E1CFB7005FDD8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6A827E1CFB7005FDD8D /* Kingfisher */; };
 		F5EEB6AC27E1CFD5005FDD8D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6AB27E1CFD5005FDD8D /* SnapKit */; };
 		F5EEB6AF27E1D033005FDD8D /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6AE27E1D033005FDD8D /* SwiftyJSON */; };
 		F5EEB6B227E1D053005FDD8D /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = F5EEB6B127E1D053005FDD8D /* Toast */; };
@@ -22,7 +23,6 @@
 		F5EEB6BA27E1D2E9005FDD8D /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */; };
 		F5EEB6BB27E1D2E9005FDD8D /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */; };
 		F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */; };
-		F5EEB6C227E1D79D005FDD8D /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */; };
 		F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */; };
 		F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */; };
 		F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */; };
@@ -50,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F516339B27E998DD00F58B24 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		F516339D27E998FB00F58B24 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F5EEB67427E1CEEA005FDD8D /* CYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +67,6 @@
 		F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
 		F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +83,6 @@
 			files = (
 				F5EEB6B227E1D053005FDD8D /* Toast in Frameworks */,
 				F5EEB6AF27E1D033005FDD8D /* SwiftyJSON in Frameworks */,
-				F5EEB6A927E1CFB7005FDD8D /* Kingfisher in Frameworks */,
 				F5EEB6AC27E1CFD5005FDD8D /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +176,7 @@
 				F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */,
 				F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */,
 				F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */,
+				F516339B27E998DD00F58B24 /* BaseTableViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -207,7 +208,7 @@
 		F5EEB6C027E1D756005FDD8D /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				F5EEB6C127E1D79D005FDD8D /* MineViewController.swift */,
+				F516339D27E998FB00F58B24 /* MineViewController.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -254,7 +255,6 @@
 			);
 			name = CYWeChat;
 			packageProductDependencies = (
-				F5EEB6A827E1CFB7005FDD8D /* Kingfisher */,
 				F5EEB6AB27E1CFD5005FDD8D /* SnapKit */,
 				F5EEB6AE27E1D033005FDD8D /* SwiftyJSON */,
 				F5EEB6B127E1D053005FDD8D /* Toast */,
@@ -332,7 +332,6 @@
 			);
 			mainGroup = F5EEB66B27E1CEEA005FDD8D;
 			packageReferences = (
-				F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */,
 				F5EEB6AD27E1D033005FDD8D /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 				F5EEB6B027E1D053005FDD8D /* XCRemoteSwiftPackageReference "Toast-Swift" */,
@@ -384,15 +383,16 @@
 				F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */,
 				F5EEB6CA27E1D868005FDD8D /* CommonMacros.swift in Sources */,
 				F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */,
-				F5EEB6C227E1D79D005FDD8D /* MineViewController.swift in Sources */,
 				F5EEB6B927E1D2E9005FDD8D /* BaseViewController.swift in Sources */,
 				F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */,
 				F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */,
 				F5EEB6D027E1D885005FDD8D /* UIViewExtension.swift in Sources */,
 				F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */,
+				F516339C27E998DD00F58B24 /* BaseTableViewController.swift in Sources */,
 				F5EEB6D227E1D8E5005FDD8D /* LeadingViewController.swift in Sources */,
 				F5EEB6BA27E1D2E9005FDD8D /* BaseNavigationViewController.swift in Sources */,
 				F5EEB6CF27E1D885005FDD8D /* UIColorExtension.swift in Sources */,
+				F516339E27E998FB00F58B24 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,14 +720,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
 		F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -755,11 +747,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F5EEB6A827E1CFB7005FDD8D /* Kingfisher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F5EEB6A727E1CFB7005FDD8D /* XCRemoteSwiftPackageReference "Kingfisher" */;
-			productName = Kingfisher;
-		};
 		F5EEB6AB27E1CFD5005FDD8D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F5EEB6AA27E1CFD5005FDD8D /* XCRemoteSwiftPackageReference "SnapKit" */;

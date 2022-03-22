@@ -2,13 +2,13 @@
 //  MineViewController.swift
 //  CYWeChat
 //
-//  Created by CityDoWCY on 2022/3/16.
+//  Created by CityDoWCY on 2022/3/22.
 //
 
 import UIKit
 
 /// 个人中心页面
-class MineViewController: BaseViewController {
+class MineViewController: BaseTableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +26,12 @@ class MineViewController: BaseViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    override func initUI() {
+        view.addSubview(plainTableView)
+        plainTableView.snp.makeConstraints { make in
+            make.left.top.right.bottom.equalToSuperview()
+        };
+    }
 
 }

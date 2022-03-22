@@ -23,8 +23,22 @@ class BaseViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+//    // 解决push时界面卡住问题
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        if self.navigationController?.viewControllers.first == self {
+//            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+//        } else {
+//            self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+//        }
+//    }
+//    
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
+        view.endEditing(true)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
@@ -47,13 +61,16 @@ class BaseViewController: UIViewController {
     }
     */
     
+    //类销毁时 通知此方法
     deinit {
-        print("控制器被释放了")
+        print("\(type(of: self)) ---> 销毁")
     }
 
 }
 
+// MARK: - 导航栏方法
 extension BaseViewController {
+    
     func popLastVC() {
         if ((self.navigationController?.viewControllers) != nil) {
             self.navigationController?.popViewController(animated: true)

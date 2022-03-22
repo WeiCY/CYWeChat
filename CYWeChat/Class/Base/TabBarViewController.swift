@@ -33,12 +33,20 @@ class TabBarViewController: UITabBarController {
     
     func customTabBar() {
         let tabBar = UITabBar.appearance()
+        //
         tabBar.isTranslucent = false
         tabBar.shadowImage = UIImage()
         tabBar.backgroundImage = UIImage()
-        tabBar.backgroundColor = UIColor.systemGray6
-
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: TABBAR_NORMAL_COLOR,
+        
+        tabBar.backgroundColor = TABBAR_BACKGROUND_COLOR
+//        tabBar.barTintColor = UIColor.blue // tabbar的背景颜色  无效
+//        tabBar.tintColor = UIColor.yellow // 选中item的颜色 但是下面的设置会覆盖
+        if #available(iOS 13.0, *) {
+            // 不设置颜色会变
+            tabBar.unselectedItemTintColor = TABBAR_NORMAL_COLOR
+        }
+       
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
                                                           NSAttributedString.Key.font: TABBAR_NORMAL_FONT], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: TABBAR_SELECT_COLOR,
                                                           NSAttributedString.Key.font: TABBAR_SELECT_FONT], for: .selected)
