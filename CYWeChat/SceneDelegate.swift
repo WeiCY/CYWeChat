@@ -22,6 +22,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let currentVersionStr = APP_VERSION
         let oldVersionStr = UserDefaults.standard.string(forKey: "Vsersion") ?? ""
     
+        CYFullScreenPopGestureExtension.startFullScreenPop()
+
         if currentVersionStr.compare(oldVersionStr) == ComparisonResult.orderedDescending{
             UserDefaults.standard.set(currentVersionStr, forKey: "Vsersion")
             let leadingController = LeadingViewController()

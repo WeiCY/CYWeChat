@@ -28,6 +28,8 @@ class MineViewController: BaseTableViewController {
     */
     
     override func initUI() {
+        self.cy_prefersNavigationBarHidden = true
+        
         view.addSubview(plainTableView)
         plainTableView.snp.makeConstraints { make in
             make.left.top.right.bottom.equalToSuperview()
