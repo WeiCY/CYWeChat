@@ -17,7 +17,8 @@ class BaseViewController: UIViewController {
         view.backgroundColor = VIEW_BACK_COLOR
         self.modalPresentationStyle = .fullScreen
         UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
-
+        // 防止导航栏遮盖
+        edgesForExtendedLayout = []
         self.initUI()
         self.initData()
         // Do any additional setup after loading the view.

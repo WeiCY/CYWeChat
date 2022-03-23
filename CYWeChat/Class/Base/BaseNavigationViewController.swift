@@ -22,7 +22,7 @@ class BaseNavigationViewController: UINavigationController {
         super.viewDidLoad()
 
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor.white
+        appearance.backgroundColor = NAVIBAR_BACKGROUND_COLOR
         appearance.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: NAVIBAR_TITLE_COLOR,
             NSAttributedString.Key.font: NAVIBAR_TITLE_FONT

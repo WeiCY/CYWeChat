@@ -54,7 +54,7 @@ class TabBarViewController: UITabBarController {
     
     func setUpAllChildVC() {
         self.tabBarAddChildVC(vc: WeChatViewController.init(), title: "微信", originImageName: "tabbar_wechat_normal", selectImageName: "tabbar_wechat_select")
-        self.tabBarAddChildVC(vc: DiscoverViewController.init(), title: "通讯录", originImageName: "tabbar_contacts_normal", selectImageName: "tabbar_contacts_select")
+        self.tabBarAddChildVC(vc: ContactsViewController.init(), title: "通讯录", originImageName: "tabbar_contacts_normal", selectImageName: "tabbar_contacts_select")
         self.tabBarAddChildVC(vc: DiscoverViewController.init(), title: "发现", originImageName: "tabbar_discover_normal", selectImageName: "tabbar_discover_select")
         self.tabBarAddChildVC(vc: MineViewController.init(), title: "我的", originImageName: "tabbar_mine_normal", selectImageName: "tabbar_mine_select")
     }
