@@ -50,4 +50,21 @@ class BaseTableViewController: BaseViewController {
         return table
     }()
     
+    lazy var dataArray: [AnyHashable] = {
+        let array = Array<AnyHashable>()
+        return array
+    }()
+    
+    // MARK: 基础代码 可被子类重写
+    func addRefersh() {
+        
+    }
+    
+    func showEmptyView() {
+        
+    }
+    
+    func closeEmptyView() {
+        
+    }
 }

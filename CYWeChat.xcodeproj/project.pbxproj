@@ -10,6 +10,7 @@
 		F516339C27E998DD00F58B24 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516339B27E998DD00F58B24 /* BaseTableViewController.swift */; };
 		F516339E27E998FB00F58B24 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516339D27E998FB00F58B24 /* MineViewController.swift */; };
 		F51633A027E9A3A800F58B24 /* CYFullScreenPopGestureExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F516339F27E9A3A800F58B24 /* CYFullScreenPopGestureExtension.swift */; };
+		F51633A427EAAC6C00F58B24 /* MineSubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51633A327EAAC6C00F58B24 /* MineSubViews.swift */; };
 		F5EEB67827E1CEEA005FDD8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */; };
 		F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */; };
 		F5EEB68127E1CEEB005FDD8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EEB68027E1CEEB005FDD8D /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		F516339B27E998DD00F58B24 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		F516339D27E998FB00F58B24 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F516339F27E9A3A800F58B24 /* CYFullScreenPopGestureExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CYFullScreenPopGestureExtension.swift; sourceTree = "<group>"; };
+		F51633A327EAAC6C00F58B24 /* MineSubViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineSubViews.swift; sourceTree = "<group>"; };
 		F5EEB67427E1CEEA005FDD8D /* CYWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EEB67727E1CEEA005FDD8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5EEB67927E1CEEA005FDD8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				F516339D27E998FB00F58B24 /* MineViewController.swift */,
+				F51633A327EAAC6C00F58B24 /* MineSubViews.swift */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */,
 				F5EEB6CA27E1D868005FDD8D /* CommonMacros.swift in Sources */,
 				F5EEB67A27E1CEEA005FDD8D /* SceneDelegate.swift in Sources */,
+				F51633A427EAAC6C00F58B24 /* MineSubViews.swift in Sources */,
 				F5EEB6B927E1D2E9005FDD8D /* BaseViewController.swift in Sources */,
 				F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */,
 				F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */,

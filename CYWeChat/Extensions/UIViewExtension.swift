@@ -83,6 +83,21 @@ extension UIView {
         }
     }
     
+    var cy_borderColor: CGColor {
+        get {
+            return self.layer.borderColor!
+        }
+        
+        set {
+            self.layer.borderColor = newValue
+            guard self.layer.masksToBounds else {
+                return
+            }
+            self.layer.masksToBounds = true
+        }
+    }
+    
+    
     var cy_borderWidth: CGFloat {
         get {
             return self.layer.borderWidth
