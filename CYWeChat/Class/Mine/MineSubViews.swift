@@ -57,6 +57,20 @@ class MineHomeListCell: UITableViewCell {
             make.right.equalTo(contentView).offset(-18)
             make.width.equalTo(8)
         };
+        
+        contentView.addSubview(noteView)
+        noteView.snp.makeConstraints { make in
+            make.centerY.equalTo(titleLabel)
+            make.left.equalTo(titleLabel.snp.right).offset(8)
+            make.width.height.equalTo(8)
+        }
+        
+        contentView.addSubview(rightIconImageView)
+        rightIconImageView.snp.makeConstraints { make in
+            make.centerY.equalTo(titleLabel)
+            make.right.equalTo(arrowImageView.snp.left).offset(-8)
+            make.width.height.equalTo(32)
+        }
     }
     
     
@@ -74,6 +88,18 @@ class MineHomeListCell: UITableViewCell {
     lazy var arrowImageView :UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage.init(named: "icon_arrow_right")
+        return imageView
+    }()
+    lazy var noteView: UIView = {
+        let view = UIView()
+        view.backgroundColor = NOTE_RED_COLOR
+        view.cy_cornerRadius = 4
+        return view
+    }()
+    lazy var rightIconImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage.init(named: "headImage")
+        imageView.cy_cornerRadius = 4
         return imageView
     }()
 }
@@ -174,7 +200,7 @@ class MineHeadView: UIView {
         let button = UIButton.init(type: .custom)
         button.setTitle("+ 状态", for: .normal)
         button.setTitleColor(TEXT_GREY_COLOR, for: .normal)
-        button.titleLabel?.font = CELL_TITLE_FONT
+        button.titleLabel?.font = CELL_SUBTITLE_FONT
         button.cy_cornerRadius = 10
         button.cy_borderWidth = 0.5
         button.cy_borderColor = TEXT_GREY_COLOR.cgColor

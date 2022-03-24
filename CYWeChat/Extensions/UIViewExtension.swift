@@ -76,9 +76,9 @@ extension UIView {
         
         set {
             self.layer.cornerRadius = newValue
-            guard self.layer.masksToBounds else {
-                return
-            }
+//            guard self.layer.masksToBounds else {
+//                return
+//            }
             self.layer.masksToBounds = true
         }
     }
@@ -90,9 +90,9 @@ extension UIView {
         
         set {
             self.layer.borderColor = newValue
-            guard self.layer.masksToBounds else {
-                return
-            }
+//            guard self.layer.masksToBounds else {
+//                return
+//            }
             self.layer.masksToBounds = true
         }
     }
@@ -105,9 +105,9 @@ extension UIView {
         
         set {
             self.layer.borderWidth = newValue
-            guard self.layer.masksToBounds else {
-                return
-            }
+//            guard self.layer.masksToBounds else {
+//                return
+//            }
             self.layer.masksToBounds = true
         }
     }

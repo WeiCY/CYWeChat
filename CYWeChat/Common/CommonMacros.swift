@@ -68,6 +68,7 @@ let NAVIBAR_BACKGROUND_COLOR: UIColor = UIColor.hexColor(0xEDEDED)
 let VIEW_BACK_COLOR: UIColor = UIColor.init(0xEDEDED)
 let TEXT_BLACK_COLOR: UIColor = UIColor.hexColor(0x333333)
 let TEXT_GREY_COLOR: UIColor = UIColor.hexColor(0x666666)
+let NOTE_RED_COLOR: UIColor = UIColor.hexColor(0xE75E58)
 
 // 字体
 let TABBAR_SELECT_FONT: UIFont = UIFont.systemFont(ofSize: 12)
@@ -75,5 +76,6 @@ let TABBAR_NORMAL_FONT: UIFont = UIFont.systemFont(ofSize: 12)
 let NAVIBAR_TITLE_FONT: UIFont = UIFont.boldSystemFont(ofSize: 18)
 
 
-let CELL_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 14)
+let CELL_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 16)
+let CELL_SUBTITLE_FONT: UIFont = UIFont.systemFont(ofSize: 14)
 let BIG_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 20, weight: .bold)
