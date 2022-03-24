@@ -36,14 +36,14 @@ class MineViewController: BaseTableViewController {
     override func initUI() {
         self.cy_prefersNavigationBarHidden = true
         
-        groupTableView.rowHeight = 56
-        groupTableView.sectionHeaderHeight = 10
-        groupTableView.sectionFooterHeight = 2
-        groupTableView.tableHeaderView = mineHeadView
-        groupTableView.register(MineHomeListCell.self, forCellReuseIdentifier: GET_CLASS_NAME(MineHomeListCell.self))
+        plainTableView.rowHeight = 56
+        plainTableView.sectionHeaderHeight = 10
+        plainTableView.sectionFooterHeight = 2
+        plainTableView.tableHeaderView = mineHeadView
+        plainTableView.register(MineHomeListCell.self, forCellReuseIdentifier: GET_CLASS_NAME(MineHomeListCell.self))
         
-        view.addSubview(groupTableView)
-        groupTableView.snp.makeConstraints { make in
+        view.addSubview(plainTableView)
+        plainTableView.snp.makeConstraints { make in
             make.left.top.right.bottom.equalToSuperview()
         };
     }
@@ -82,7 +82,7 @@ class MineViewController: BaseTableViewController {
             ]
         ]
         dataArray = mineData
-        groupTableView.reloadData()
+        plainTableView.reloadData()
     }
     
 }

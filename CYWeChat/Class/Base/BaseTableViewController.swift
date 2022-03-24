@@ -35,6 +35,11 @@ class BaseTableViewController: BaseViewController {
         table.showsVerticalScrollIndicator = false
         table.showsHorizontalScrollIndicator = false
         table.contentInsetAdjustmentBehavior = .never
+        
+        if #available(iOS 15, *) {
+            table.sectionHeaderTopPadding = 0
+        }
+        
         return table
     }()
 
@@ -47,6 +52,11 @@ class BaseTableViewController: BaseViewController {
         table.showsVerticalScrollIndicator = false
         table.showsHorizontalScrollIndicator = false
         table.contentInsetAdjustmentBehavior = .never
+        
+        if #available(iOS 15, *) {
+            table.sectionHeaderTopPadding = 0
+        }
+        
         return table
     }()
     

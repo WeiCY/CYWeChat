@@ -11,6 +11,8 @@ import UIKit
 extension UIView {
     
     // MARK: 属性
+    
+    // MARK: frame
     var cy_x: CGFloat {
         get {
             return self.frame.origin.x
@@ -69,6 +71,7 @@ extension UIView {
         }
     }
     
+    // MARK: layer
     var cy_cornerRadius: CGFloat {
         get {
             return self.layer.cornerRadius
@@ -97,7 +100,6 @@ extension UIView {
         }
     }
     
-    
     var cy_borderWidth: CGFloat {
         get {
             return self.layer.borderWidth
@@ -111,6 +113,14 @@ extension UIView {
             self.layer.masksToBounds = true
         }
     }
+    
+ // TODO: 添加badge 两种。一种是无数字右上角添加圆角。一种是数字 超过99显示99+，最小为1
+    // MARK: badge
+//    var numBadge: Int {
+//        set {
+//
+//        }
+//    }
     
     // MARK: 方法
     

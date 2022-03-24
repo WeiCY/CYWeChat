@@ -56,20 +56,7 @@ func GET_CLASS_NAME(_ x: Any) -> String {
     String(describing: type(of: x))
 }
 
-// MARK: - 主题
-// 颜色
-let THEME_COLOR: UIColor = UIColor.init(0x58BE6A)
-let TABBAR_SELECT_COLOR = THEME_COLOR
-let TABBAR_NORMAL_COLOR: UIColor = UIColor.hexColor(0x1B1B1B)
-let TABBAR_BACKGROUND_COLOR: UIColor = UIColor.hexColor(0xF5F5F5)
-let NAVIBAR_TITLE_COLOR: UIColor = UIColor.init(0x333333)
-let NAVIBAR_BACKGROUND_COLOR: UIColor = UIColor.hexColor(0xEDEDED)
-
-let VIEW_BACK_COLOR: UIColor = UIColor.init(0xEDEDED)
-let TEXT_BLACK_COLOR: UIColor = UIColor.hexColor(0x333333)
-let TEXT_GREY_COLOR: UIColor = UIColor.hexColor(0x666666)
-let NOTE_RED_COLOR: UIColor = UIColor.hexColor(0xE75E58)
-
+// MARK: - 字体
 // 字体
 let TABBAR_SELECT_FONT: UIFont = UIFont.systemFont(ofSize: 12)
 let TABBAR_NORMAL_FONT: UIFont = UIFont.systemFont(ofSize: 12)
@@ -79,3 +66,17 @@ let NAVIBAR_TITLE_FONT: UIFont = UIFont.boldSystemFont(ofSize: 18)
 let CELL_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 16)
 let CELL_SUBTITLE_FONT: UIFont = UIFont.systemFont(ofSize: 14)
 let BIG_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 20, weight: .bold)
+
+// MARK:- 偏好设置存储
+/// 应用是否首次启动
+public let kAppLaunchUserDefaultsKey = "kAppLaunchUserDefaultsKey"
+/// 应用当前语言设置
+public let kAppLanguageUserDefaultsKey = "kAppLanguageUserDefaultsKey"
+/// 用户基本信息
+public let kUserInfoSaveUserDefaultsKey = "kUserInfoSaveUserDefaultsKey"
+/// 用户名存储显示
+public let kUserAccountSaveUserDefaultsKey = "kUserAccountSaveUserDefaultsKey"
+/// 更换AppIcon
+public let kChangedAppIocnUserDefaultsKey = "kChangedAppIocnUserDefaultsKey"
+/// 白天夜间模式
+public let kThemeSettingUserDefaultKey = "kThemeSettingUserDefaultKey"

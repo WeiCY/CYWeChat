@@ -41,15 +41,30 @@ class TabBarViewController: UITabBarController {
         tabBar.backgroundColor = TABBAR_BACKGROUND_COLOR
 //        tabBar.barTintColor = UIColor.blue // tabbar的背景颜色  无效
 //        tabBar.tintColor = UIColor.yellow // 选中item的颜色 但是下面的设置会覆盖
-        if #available(iOS 13.0, *) {
-            // 不设置颜色会变
-            tabBar.unselectedItemTintColor = TABBAR_NORMAL_COLOR
-        }
+        
+        // 不设置颜色会变
+        tabBar.unselectedItemTintColor = TABBAR_NORMAL_COLOR
        
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.blue,
                                                           NSAttributedString.Key.font: TABBAR_NORMAL_FONT], for: .normal)
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: TABBAR_SELECT_COLOR,
                                                           NSAttributedString.Key.font: TABBAR_SELECT_FONT], for: .selected)
+        // 适配iOS15的tabbar变透明
+//        if #available(iOS 15.0, *) {
+//            let appearnce = UITabBarAppearance()
+//
+//            let itemAppearance = UITabBarItemAppearance()
+//            itemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue,
+//                                                         NSAttributedString.Key.font: TABBAR_NORMAL_FONT]
+//            itemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: TABBAR_SELECT_COLOR,
+//                                                           NSAttributedString.Key.font: TABBAR_SELECT_FONT]
+//            appearnce.stackedLayoutAppearance = itemAppearance
+//
+//            appearnce.configureWithOpaqueBackground()
+//            appearnce.backgroundColor = TABBAR_BACKGROUND_COLOR
+//            tabBar.standardAppearance = appearnce
+//            tabBar.scrollEdgeAppearance = appearnce
+//        }
     }
     
     func setUpAllChildVC() {

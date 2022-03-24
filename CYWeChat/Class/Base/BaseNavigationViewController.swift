@@ -22,11 +22,31 @@ class BaseNavigationViewController: UINavigationController {
         super.viewDidLoad()
 
         let appearance = UINavigationBarAppearance()
+        /**
+         barTintColor 导航栏背景颜色
+         iOS15以前设置有效果，iOS15以后无效果需要设置UINavigationBarAppearance的backgroundColor
+         */
         appearance.backgroundColor = NAVIBAR_BACKGROUND_COLOR
+        
+        /**
+         isTranslucent 半透明
+
+         默认为YES，当设为YES，iOS15以前先取barTintColor的颜色，当barTintColor为nil默认半透明毛玻璃，iOS15先取UINavigationBarAppearance的backgroundColor颜色，当UINavigationBarAppearance的backgroundColor为nil，UINavigationBarAppearance的backgroundEffect默认半透明毛玻璃，当UINavigationBarAppearance的backgroundEffect为nil背景为透明
+
+         当设为NO，iOS15以前先取barTintColor的颜色，当barTintColor为nil默认白色，iOS15先取UINavigationBarAppearance的backgroundColor颜色，当UINavigationBarAppearance的backgroundColor为nil，UINavigationBarAppearance的backgroundEffect默认背景为灰色，当UINavigationBarAppearance的backgroundEffect为nil背景为黑色
+         */
+        
+        // tintColor 导航栏文字 颜色 暂不使用 使用富文本
         appearance.titleTextAttributes = [
             NSAttributedString.Key.foregroundColor: NAVIBAR_TITLE_COLOR,
             NSAttributedString.Key.font: NAVIBAR_TITLE_FONT
         ]
+        
+        /**
+         shadowImage
+         iOS13以前设置有效果,不过需要同时设置backgroundImage，会影响导航栏背景，不建议
+         iOS13以后无效果需要设置UINavigationBarAppearance的shadowColor和shadowImage
+         */
         appearance.shadowImage = UIImage()
         appearance.shadowColor = nil
         navigationBar.standardAppearance = appearance

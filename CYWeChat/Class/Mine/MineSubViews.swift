@@ -119,7 +119,7 @@ class MineHeadView: UIView {
     
     // subview
     func setupSubview() {
-        backgroundColor = UIColor.white
+        backgroundColor = VIEW_BACK_COLOR
         
         self.addSubview(iconImageView)
         iconImageView.snp.makeConstraints { make in
