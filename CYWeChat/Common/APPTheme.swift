@@ -69,6 +69,13 @@ let NAVIBAR_TITLE_COLOR: UIColor = UIColor{ traitCollection in
 let NAVIBAR_BACKGROUND_COLOR: UIColor = TABBAR_BACKGROUND_COLOR
 //let VIEW_BACK_COLOR: UIColor = UIColor.init(named: "CYViewBackColor")!
 let VIEW_BACK_COLOR: UIColor = NAVIBAR_BACKGROUND_COLOR
+let CELL_BACK_COLOR: UIColor = UIColor{ traitCollection in
+    if traitCollection.userInterfaceStyle == .light {
+        return UIColor.hexColor(0xFFFFFF)
+    } else {
+        return UIColor.hexColor(0x333333)
+    }
+}
 
 let TEXT_BLACK_COLOR: UIColor = UIColor.init{ traitCollection in
     if traitCollection.userInterfaceStyle == .light {
@@ -82,7 +89,7 @@ let TEXT_GREY_COLOR: UIColor = UIColor{ traitCollection in
     if traitCollection.userInterfaceStyle == .light {
         return UIColor.hexColor(0x666666)
     } else {
-        return UIColor.hexColor(0x555555)
+        return UIColor.hexColor(0x888888)
     }
 }
 

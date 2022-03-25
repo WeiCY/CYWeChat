@@ -38,6 +38,8 @@ class MineHomeListCell: UITableViewCell {
     
     // subview
     func setupSubview() {
+        backgroundColor = CELL_BACK_COLOR
+        
         contentView.addSubview(iconImageView)
         iconImageView.snp.makeConstraints { make in
             make.left.equalTo(self.contentView).offset(18)
