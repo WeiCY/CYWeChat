@@ -17,7 +17,8 @@ let DEVICE_IS_IPAD: Bool = (UIDevice.current.userInterfaceIdiom == UIUserInterfa
 let APP_VERSION: String = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as! String
 let APP_NAME: String = Bundle.main.infoDictionary!["CFBundleDisplayName"] as! String
 
-let k_APPDELEGATE = UIApplication.shared.delegate
+var k_APPDELEGATE = UIApplication.shared.delegate
+var k_WINDOWSCENE = UIApplication.shared.connectedScenes.first as! UIWindowScene
 
 // MARK: - 尺寸信息
 let SCREEN_WIDTH: CGFloat = UIScreen.main.bounds.size.width

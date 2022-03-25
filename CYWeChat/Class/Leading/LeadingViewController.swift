@@ -28,6 +28,17 @@ class LeadingViewController: BaseViewController {
 
     
     override func initUI() {
-        self.navigationItem.title = "引导页，自定义即可"
+        let label = UILabel()
+        label.text = "这是引导页，点击即可跳过"
+        view.addSubview(label)
+        label.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let tabbarController = TabBarViewController()
+        k_WINDOWSCENE.keyWindow?.rootViewController = tabbarController
+        
     }
 }

@@ -27,6 +27,8 @@ import UIKit
     系统提供的图片 SF Symbols
  方法二：
     类似颜色设置 在Assets中添加不同模式下的图片
+ 
+ 参考：https://www.jianshu.com/p/e6616e44cf60
  */
 
 //let isDark = self.traitCollection.userInterfaceStyle == .dark
@@ -65,7 +67,8 @@ let NAVIBAR_TITLE_COLOR: UIColor = UIColor{ traitCollection in
     }
 }
 let NAVIBAR_BACKGROUND_COLOR: UIColor = TABBAR_BACKGROUND_COLOR
-let VIEW_BACK_COLOR: UIColor = UIColor.init(named: "CYViewBackColor")!
+//let VIEW_BACK_COLOR: UIColor = UIColor.init(named: "CYViewBackColor")!
+let VIEW_BACK_COLOR: UIColor = NAVIBAR_BACKGROUND_COLOR
 
 let TEXT_BLACK_COLOR: UIColor = UIColor.init{ traitCollection in
     if traitCollection.userInterfaceStyle == .light {
