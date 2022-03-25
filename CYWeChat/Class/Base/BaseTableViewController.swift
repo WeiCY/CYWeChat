@@ -32,8 +32,8 @@ class BaseTableViewController: BaseViewController {
         // 加上 as? 可选 不加的话 必须添加代理
         table.delegate = self as? UITableViewDelegate
         table.dataSource = self as? UITableViewDataSource
-        table.showsVerticalScrollIndicator = false
-        table.showsHorizontalScrollIndicator = false
+//        table.showsVerticalScrollIndicator = false
+//        table.showsHorizontalScrollIndicator = false
         table.contentInsetAdjustmentBehavior = .never
         
         if #available(iOS 15, *) {
@@ -49,8 +49,8 @@ class BaseTableViewController: BaseViewController {
         // 加上 as? 可选 不加的话 必须添加代理
         table.delegate = self as? UITableViewDelegate
         table.dataSource = self as? UITableViewDataSource
-        table.showsVerticalScrollIndicator = false
-        table.showsHorizontalScrollIndicator = false
+//        table.showsVerticalScrollIndicator = false
+//        table.showsHorizontalScrollIndicator = false
         table.contentInsetAdjustmentBehavior = .never
         
         if #available(iOS 15, *) {

@@ -38,8 +38,10 @@ class MineViewController: BaseTableViewController {
         
         plainTableView.rowHeight = 56
         plainTableView.sectionHeaderHeight = 10
-        plainTableView.sectionFooterHeight = 2
+        plainTableView.sectionFooterHeight = 0.01
         plainTableView.tableHeaderView = mineHeadView
+        plainTableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
+        plainTableView.separatorInset = UIEdgeInsets.init(top: 55, left: 55, bottom: 0, right: 0)
         plainTableView.register(MineHomeListCell.self, forCellReuseIdentifier: GET_CLASS_NAME(MineHomeListCell.self))
         
         view.addSubview(plainTableView)

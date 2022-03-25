@@ -66,6 +66,7 @@ let NAVIBAR_TITLE_FONT: UIFont = UIFont.boldSystemFont(ofSize: 18)
 
 let CELL_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 16)
 let CELL_SUBTITLE_FONT: UIFont = UIFont.systemFont(ofSize: 14)
+let CELL_INFO_FONT: UIFont = UIFont.systemFont(ofSize: 12)
 let BIG_TITLE_FONT: UIFont = UIFont.systemFont(ofSize: 20, weight: .bold)
 
 // MARK:- 偏好设置存储

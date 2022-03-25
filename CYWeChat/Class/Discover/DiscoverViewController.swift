@@ -31,7 +31,9 @@ class DiscoverViewController: BaseTableViewController {
         self.cy_prefersNavigationBarHidden = false
         groupTableView.rowHeight = 56
         groupTableView.sectionHeaderHeight = 10
-        groupTableView.sectionFooterHeight = 2
+        groupTableView.sectionFooterHeight = 0
+        groupTableView.separatorStyle = UITableViewCell.SeparatorStyle.singleLine
+        groupTableView.separatorInset = UIEdgeInsets.init(top: 55, left: 55, bottom: 0, right: 0)
         groupTableView.register(MineHomeListCell.self, forCellReuseIdentifier: GET_CLASS_NAME(MineHomeListCell.self))
         
         view.addSubview(groupTableView)

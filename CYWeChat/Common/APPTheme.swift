@@ -89,6 +89,14 @@ let TEXT_GREY_COLOR: UIColor = UIColor{ traitCollection in
     if traitCollection.userInterfaceStyle == .light {
         return UIColor.hexColor(0x666666)
     } else {
+        return UIColor.hexColor(0x777777)
+    }
+}
+
+let TEXT_LIGHTGREY_COLOR: UIColor = UIColor{ traitCollection in
+    if traitCollection.userInterfaceStyle == .light {
+        return UIColor.hexColor(0x999999)
+    } else {
         return UIColor.hexColor(0x888888)
     }
 }
