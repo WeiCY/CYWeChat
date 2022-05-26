@@ -15,8 +15,11 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = VIEW_BACK_COLOR
+        
         self.modalPresentationStyle = .fullScreen
+        
         UIScrollView.appearance().contentInsetAdjustmentBehavior = .never
+        
         // 防止导航栏遮盖
         edgesForExtendedLayout = []
         self.initUI()
@@ -82,5 +85,12 @@ extension BaseViewController {
         if ((self.navigationController?.viewControllers) != nil) {
             self.navigationController?.popToRootViewController(animated: true)
         }
+    }
+}
+
+// MARK: - statusBar
+extension BaseViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 /// TabBar控制器
-class TabBarViewController: UITabBarController {
+class BaseTabBarViewController: UITabBarController {
 
     private var indexFlag: Int = 0
 
@@ -79,12 +79,17 @@ class TabBarViewController: UITabBarController {
         vc.navigationItem.title = title;
         vc.tabBarItem = UITabBarItem.init(title: title, image: UIImage.init(named: originImageName)?.withRenderingMode(.alwaysOriginal), selectedImage: UIImage.init(named: selectImageName)?.withRenderingMode(.alwaysOriginal))
         let naviVC = BaseNavigationViewController.init(rootViewController: vc)
+//        
+//        if UIDevice.current.userInterfaceIdiom == .phone {
+//            vc.tabBarItem.imageInsets = UIEdgeInsets(top: -2, left: 0, bottom: 2, right: 0)
+//        }
+//        
         self.addChild(naviVC)
     }
 
 }
 
-extension TabBarViewController {
+extension BaseTabBarViewController {
     // MARK: 动画
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         if let index = tabBar.items?.firstIndex(of: item) {

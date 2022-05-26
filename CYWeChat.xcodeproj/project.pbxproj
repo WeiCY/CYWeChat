@@ -28,7 +28,7 @@
 		F5EEB6B927E1D2E9005FDD8D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */; };
 		F5EEB6BA27E1D2E9005FDD8D /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */; };
 		F5EEB6BB27E1D2E9005FDD8D /* BaseWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */; };
-		F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */; };
+		F5EEB6BC27E1D2E9005FDD8D /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6B827E1D2E9005FDD8D /* BaseTabBarViewController.swift */; };
 		F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */; };
 		F5EEB6C627E1D7C5005FDD8D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */; };
 		F5EEB6C827E1D7E2005FDD8D /* WeChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */; };
@@ -78,7 +78,7 @@
 		F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWebViewController.swift; sourceTree = "<group>"; };
-		F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		F5EEB6B827E1D2E9005FDD8D /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C327E1D7B2005FDD8D /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C527E1D7C5005FDD8D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		F5EEB6C727E1D7E2005FDD8D /* WeChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatViewController.swift; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 				F5EEB6B527E1D2E9005FDD8D /* BaseViewController.swift */,
 				F5EEB6B627E1D2E9005FDD8D /* BaseNavigationViewController.swift */,
 				F5EEB6B727E1D2E9005FDD8D /* BaseWebViewController.swift */,
-				F5EEB6B827E1D2E9005FDD8D /* TabBarViewController.swift */,
+				F5EEB6B827E1D2E9005FDD8D /* BaseTabBarViewController.swift */,
 				F516339B27E998DD00F58B24 /* BaseTableViewController.swift */,
 			);
 			path = Base;
@@ -409,7 +409,7 @@
 				F5EEB6C427E1D7B2005FDD8D /* DiscoverViewController.swift in Sources */,
 				F5EEB6D027E1D885005FDD8D /* UIViewExtension.swift in Sources */,
 				F51633AD27EDB38D00F58B24 /* WeChatSubViews.swift in Sources */,
-				F5EEB6BC27E1D2E9005FDD8D /* TabBarViewController.swift in Sources */,
+				F5EEB6BC27E1D2E9005FDD8D /* BaseTabBarViewController.swift in Sources */,
 				F51633A027E9A3A800F58B24 /* CYFullScreenPopGestureExtension.swift in Sources */,
 				F516339C27E998DD00F58B24 /* BaseTableViewController.swift in Sources */,
 				F5EEB6D227E1D8E5005FDD8D /* LeadingViewController.swift in Sources */,

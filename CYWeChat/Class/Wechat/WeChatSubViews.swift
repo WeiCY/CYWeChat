@@ -103,3 +103,9 @@ class WeChatListCell: UITableViewCell {
         return label
     }()
 }
+
+//class TopSearchBar: UIView {
+//    override init(frame: CGRect) {
+//        
+//    }
+//}

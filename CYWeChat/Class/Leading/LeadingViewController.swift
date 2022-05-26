@@ -37,7 +37,7 @@ class LeadingViewController: BaseViewController {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let tabbarController = TabBarViewController()
+        let tabbarController = BaseTabBarViewController()
         k_WINDOWSCENE.keyWindow?.rootViewController = tabbarController
         
     }
