@@ -20,12 +20,58 @@ let APP_NAME: String = Bundle.main.infoDictionary!["CFBundleDisplayName"] as! St
 var k_APPDELEGATE = UIApplication.shared.delegate
 var k_WINDOWSCENE = UIApplication.shared.connectedScenes.first as! UIWindowScene
 
+/// 获取KeyWindow
+/// - Returns: 返回KeyWindow
+func getKeyWindow() -> UIWindow? {
+    var keyWindow: UIWindow?
+    if #available(iOS 13, *){
+        var windowScene: UIWindowScene?
+        
+        for item in UIApplication.shared.connectedScenes {
+            if let temp = item as? UIWindowScene{
+                windowScene = temp
+            }
+        }
+        
+        guard let wScene = windowScene else { return keyWindow}
+        
+        for item in wScene.windows {
+            if item.isKeyWindow{
+                keyWindow = item
+            }
+        }
+    }else{
+        keyWindow = UIApplication.shared.keyWindow
+    }
+    
+    return keyWindow
+}
+
+
 // MARK: - 尺寸信息
 let SCREEN_WIDTH: CGFloat = UIScreen.main.bounds.size.width
 let SCREEN_HEIGHT: CGFloat = UIScreen.main.bounds.size.height
 
 let NAVIBAR_HEIGH: CGFloat = 44.0
-let NAVI_STATUSBAR_HEIGHT: CGFloat = (UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.size.height)!
+
+var NAVI_STATUSBAR_HEIGHT: CGFloat {
+    get {
+        if #available(iOS 13.0, *) {
+            let keyWindow = UIApplication.shared.connectedScenes
+                .map({ $0 as? UIWindowScene })
+                .compactMap({ $0 })
+                .first?.windows.first
+            let statusBar = keyWindow?.windowScene?.statusBarManager?.statusBarFrame
+            return statusBar?.size.height ?? 20.0
+        } else {
+            return UIApplication.shared.statusBarFrame.size.height
+        }
+    }
+}
+
+//let NAVI_STATUSBAR_HEIGHT: CGFloat = (UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.size.height)!
+//let StatusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
+
 let SAFE_AREA_TOP_HEIGHT: CGFloat = NAVIBAR_HEIGH + NAVI_STATUSBAR_HEIGHT
 let SAFE_AREA_BOTTOM_HEIGHT: CGFloat = (NAVI_STATUSBAR_HEIGHT > 20.0 ? 34.0 : 0.0)
 let TABBAR_HEIGHT: CGFloat = SAFE_AREA_BOTTOM_HEIGHT + 49.0
@@ -50,6 +96,33 @@ let k_UUID = { () -> String in
         return uuid
     }
     return ""
+}
+
+// MARK: - topVC
+/// 获取当前屏幕最上面的VC
+/// - Returns: VC
+func getWindowTopVC() -> UIViewController?{
+    var result: UIViewController?
+    var rootVC: UIViewController?
+    
+    if let rVC = getKeyWindow()?.rootViewController{
+        rootVC = rVC
+    }
+    
+    while rootVC != nil {
+        if let nav = rootVC as? UINavigationController{
+            result = nav.visibleViewController
+            rootVC = result?.presentedViewController
+        }else if let tab = rootVC as? UITabBarController{
+            result = tab.selectedViewController
+            rootVC = result
+        }else{
+            result = rootVC
+            rootVC = nil
+        }
+    }
+    
+    return result
 }
 
 // MARK: - 类名

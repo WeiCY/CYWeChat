@@ -17,7 +17,7 @@ class WeChatListCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         
-        setupSubview()
+        setupSubviews()
     }
     
     required init?(coder: NSCoder) {
@@ -34,7 +34,7 @@ class WeChatListCell: UITableViewCell {
     }
     
     // subview
-    func setupSubview() {
+    func setupSubviews() {
         backgroundColor = CELL_BACK_COLOR
         
         contentView.addSubview(iconImageView)
@@ -104,8 +104,45 @@ class WeChatListCell: UITableViewCell {
     }()
 }
 
-//class TopSearchBar: UIView {
-//    override init(frame: CGRect) {
-//        
-//    }
-//}
+class WechatSearchBar: UISearchBar {
+    
+    var searchIconOffset: Bool = false
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = VIEW_BACK_COLOR
+        
+        setupSubviews()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupSubviews() {
+        self.placeholder = "搜索"
+        self.tintColor = THEME_COLOR
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        let barBackgorundView = self.subviews.first!.subviews.first!
+        barBackgorundView.alpha = 0
+        
+        let subView = self.subviews[0].subviews[1].subviews[0]
+        subView.backgroundColor = UIColor.white
+        subView.layer.cornerRadius = 8
+        subView.layer.masksToBounds = true
+        subView.layer.borderWidth = 0.3
+        subView.layer.borderColor = UIColor.lightGray.cgColor
+        
+        if searchIconOffset {
+           setPositionAdjustment(UIOffset.init(horizontal: self.bounds.width/2 - 48, vertical: 0), for: .search)
+        }else {
+            setPositionAdjustment(UIOffset.zero, for: .search)
+        }
+
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = "取消"
+    }
+}

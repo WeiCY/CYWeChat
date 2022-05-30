@@ -71,6 +71,17 @@ extension UIView {
         }
     }
     
+    // MARK: safearea
+    var cy_safeAreaBottomHeight: CGFloat {
+        get {
+            return safeAreaInsets.bottom
+        }
+    }
+    
+    var cy_safeAreaTopHeight: CGFloat {
+        return safeAreaInsets.top
+    }
+    
     // MARK: layer
     var cy_cornerRadius: CGFloat {
         get {

@@ -20,7 +20,7 @@ class MineHomeListCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.selectionStyle = .none
         
-        setupSubview()
+        setupSubviews()
     }
     
     required init?(coder: NSCoder) {
@@ -37,7 +37,7 @@ class MineHomeListCell: UITableViewCell {
     }
     
     // subview
-    func setupSubview() {
+    func setupSubviews() {
         backgroundColor = CELL_BACK_COLOR
         
         contentView.addSubview(iconImageView)
@@ -112,7 +112,7 @@ class MineHeadView: UIView {
     // life cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupSubview()
+        setupSubviews()
     }
     
     required init?(coder: NSCoder) {
@@ -120,7 +120,7 @@ class MineHeadView: UIView {
     }
     
     // subview
-    func setupSubview() {
+    func setupSubviews() {
         backgroundColor = VIEW_BACK_COLOR
         
         self.addSubview(iconImageView)

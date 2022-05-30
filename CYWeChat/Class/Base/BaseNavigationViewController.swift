@@ -12,7 +12,7 @@ class BaseNavigationViewController: UINavigationController {
 
     lazy var backButton: UIButton = {
         let backBtn = UIButton.init(type: .custom)
-        backBtn.setImage(UIImage.init(named: "common_nav_back"), for: .normal)
+        backBtn.setImage(UIImage.init(named: "commom_nav_back"), for: .normal)
         backBtn.frame = CGRect.init(x: 0, y: 0, width: 44, height: 40)
         backBtn.addTarget(self, action: #selector(backBtnClick), for: .touchUpInside)
         return backBtn
